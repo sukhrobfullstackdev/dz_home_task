@@ -40,12 +40,6 @@ Start the development server:
 
 pnpm dev
 
-Environment Variables
-
-Create a .env.local file and add:
-
-NEXT_PUBLIC_MET_API=https://collectionapi.metmuseum.org/public/collection/v1
-
 API Usage
 
 Search API: GET /search?q={query}
