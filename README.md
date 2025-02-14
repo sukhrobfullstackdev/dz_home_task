@@ -1,40 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+This project is a Next.js-based (Pages Router) web application that allows users to search for artworks using the Metropolitan Museum of Art's public API. It provides a seamless UI with search, pagination, and image optimization for better performance.
 
-## Getting Started
+Features
 
-First, run the development server:
+Search Functionality: Users can search for artworks by keyword.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
+Pagination: Large datasets are paginated for better navigation.
+
+Artwork Details: Each artwork has a dedicated page with detailed information.
+
+Optimized Performance: Image optimization and efficient API fetching.
+
+Responsive Design: Tailored for mobile and desktop experiences.
+
+Tech Stack
+
+Next.js (Pages Router)
+
+TypeScript
+
+Tailwind CSS
+
+Metropolitan Museum of Art API
+
+
+Installation
+
+Clone the repository:
+
+
+Navigate to the project directory:
+
+cd dz_test_task
+
+Install dependencies:
+
+pnpm install
+
+Start the development server:
+
 pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Environment Variables
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Create a .env.local file and add:
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+NEXT_PUBLIC_MET_API=https://collectionapi.metmuseum.org/public/collection/v1
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+API Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Search API: GET /search?q={query}
 
-## Learn More
+Artwork Details API: GET /objects/{id}
 
-To learn more about Next.js, take a look at the following resources:
+Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+This project can be deployed to Vercel:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+pnpm run build
+pnpm start
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Sukhrobbek (Sam) - Software Engineer
