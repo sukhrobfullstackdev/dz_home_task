@@ -6,6 +6,12 @@ Search Functionality: Users can search for artworks by keyword.
 
 Pagination: Large datasets are paginated for better navigation.
 
+Static Generation with ISR: The first 5 pages are statically generated at build time, while additional pages are generated on-demand using Incremental Static Regeneration (ISR).
+
+Lazy Loading for Images: Implemented lazy loading so that images only load when they come into the viewport, improving performance..
+
+Grid System: Utilized a grid layout to efficiently display artwork cards.
+
 Artwork Details: Each artwork has a dedicated page with detailed information.
 
 Optimized Performance: Image optimization and efficient API fetching.
@@ -27,6 +33,7 @@ Installation
 
 Clone the repository:
 
+git clone https://github.com/sukhrobfullstackdev/dz_home_task
 
 Navigate to the project directory:
 
@@ -34,11 +41,11 @@ cd dz_test_task
 
 Install dependencies:
 
-pnpm install
+npm install
 
 Start the development server:
 
-pnpm dev
+npm run dev
 
 API Usage
 
@@ -50,7 +57,7 @@ Deployment
 
 This project can be deployed to Vercel:
 
-pnpm run build
-pnpm start
+npm run build
+npm start
 
 Sukhrobbek (Sam) - Software Engineer
